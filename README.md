@@ -4,6 +4,10 @@ A responsive static replica of the public-facing GOLDMINE website, focused on it
 
 **Live demo:** <https://rushgrimes.github.io/goldmine_test/>
 
+## PostgreSQL API scaffold
+
+`server/` contains a separately deployable, read-only PostgreSQL API for archive Search and folder Browse metadata. The GitHub Pages demo remains mock-only and does not yet call it. The API uses a proposed schema based on sample fields; it is not connected to the live Oracle database, and mapping/importing production records requires the approved source schema and access rules. See [`server/README.md`](server/README.md) for the API contract, security model, deployment configuration, and migration steps.
+
 ## Run locally
 
 Serve this directory with any static web server (for example, `python -m http.server 8000`) and open `http://localhost:8000`. The site is also suitable for static hosting such as GitHub Pages.
