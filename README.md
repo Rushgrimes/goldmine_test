@@ -2,6 +2,8 @@
 
 A responsive static replica of the public-facing GOLDMINE website, focused on its Home, Search, Browse and Support experiences. The site uses representative local sample records; it does not connect to the live archive, an API, a database, account services or remote document storage.
 
+**Live demo:** <https://rushgrimes.github.io/goldmine_test/>
+
 ## Run locally
 
 Serve this directory with any static web server (for example, `python -m http.server 8000`) and open `http://localhost:8000`. The site is also suitable for static hosting such as GitHub Pages.
